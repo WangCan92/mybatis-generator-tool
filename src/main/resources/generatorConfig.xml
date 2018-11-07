@@ -52,7 +52,7 @@
         <!-- 必须要有的，使用这个配置链接数据库
             @TODO:是否可以扩展
          -->
-        <jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://192.168.6.85:5432/investment" userId="postgres" password="postgres">
+        <jdbcConnection driverClass="org.postgresql.Driver" connectionURL="jdbc:postgresql://192.168.6.85:5432/investment" userId="postgres" password="kh^%kfdk3ff23">
             <!-- 这里面可以设置property属性，每一个property属性都设置到配置的Driver上 -->
         </jdbcConnection>
 
@@ -136,22 +136,23 @@
             <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
 
         </table>
-        <table tableName="paas_work_process_business" domainObjectName="WorkProcessBusinessPO">
-            <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
 
-        </table>
         <table tableName="paas_work_process_collection" domainObjectName="WorkProcessCollectionPO">
             <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
         </table>-->
-        <table tableName="paas_work_process_user" domainObjectName="WorkProcessUserPO">
+        <!--<table tableName="paas_work_process_user" domainObjectName="WorkProcessUserPO">
             <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
             <columnOverride column="type" javaType="java.lang.Integer"/>
 
-        </table>
+        </table>-->
         <!--<table tableName="paas_work_process_status" domainObjectName="WorkProcessStatusPO">
             <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
 
         </table>-->
+        <table tableName="paas_work_process_business" domainObjectName="WorkProcessBusinessPO">
+            <columnOverride column="is_deleted" javaType="java.lang.Integer"/>
+
+        </table>
 
 
         <!-- 选择一个table来生成相关文件，可以有一个或多个table，必须要有table元素

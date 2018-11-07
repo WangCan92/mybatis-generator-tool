@@ -16,13 +16,13 @@ import java.util.List;
 /**
  * @author wangcan
  */
-public class MybatisGeneratorUtil {
+public class WorkProccessGeneratorUtil {
     public static void main(String[] args) {
         try {
             System.out.println("start generator ...");
             List<String> warnings = new ArrayList<String>();
             boolean overwrite = true;
-            File configFile = new File(MybatisGeneratorUtil.class.getResource("/generatorConfig-schedule.xml").getFile());
+            File configFile = new File(WorkProccessGeneratorUtil.class.getResource("/generatorConfig.xml").getFile());
             ConfigurationParser cp = new ConfigurationParser(warnings);
             Configuration config = cp.parseConfiguration(configFile);
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
